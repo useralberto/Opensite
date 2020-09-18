@@ -1,0 +1,41 @@
+{
+  "name": "Opensite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^4.1.2",
+    "less": "^3.11.1",
+    "resolve-url-loader": "3.1.0",
+    "sass": "^1.22.4",
+    "sass-loader": "^7.3.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "@types/headroom": "^0.7.31",
+    "animate.css": "^3.7.2",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "gmap3": "^7.2.0",
+    "hamburgers": "^1.1.3",
+    "headroom.js": "^0.9.4",
+    "jquery": "^3.4.1",
+    "js-cookie": "^2.2.0",
+    "lazysizes": "^5.2.0",
+    "percircle": "^1.0.29",
+    "popper.js": "^1.15.0",
+    "slick-carousel": "^1.8.1"
+  }
+}
